@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>Greg's Gambits | Greg's Boggle</title>
+		<link href="css/greg.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body onload="setup()">
+		<div id="container">
+			<img src="asset/images/superhero.jpg" class="floatleft" />
+			<h1><em>Greg's Game of Boggle</em></h1>
+			<p>&nbsp;</p>
+			<div id="nav">
+				<p><a href="index.html">Home</a>
+	
+				<a href="play_games.html">Play a Game</a>
+				<a href="sign.html">Sign In</a>
+
+			</div>
+			<div id="content">
+				<p>The object of the game is to create as many words as you can, 
+					in a given time limit, from the letters shown below. When you 
+					are ready to begin, click the button.</p>
+
+				<!-- put in a button to begin the game -->
+				<p><input type="button" value= "begin the game" onclick="boggle()" /> </p>	
+				<!-- put the word in to the text box 				
+				<p id="enter">Enter Your Word here: 
+					<br><input type="text" id="guessInput" oninput="inputYourWord()"></p>	-->
+				<!-- display count down timer -->
+				<p id="countDown">&nbsp;</p> 
+				<!-- display the letters selected -->
+				<h2 id="alignLeft">Letters you can use: <br/><div id="letters">&nbsp;</div><br /></h2>
+				<!-- display words player enters -->
+				<h2 id="alignLeft">Your words so far: <br/><div id="entries">&nbsp;</div><br /></h2>
+				<!-- display results -->
+				<h2 id="alignLeft">Results: <br/><div id="result">&nbsp;</div></h2>
+			
+			</div>
+			<div id="footer">Copyright &copy; 2013 Greg's Gambits<br />
+				<a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a></div>
+		</div>
+		<script src="scripts/gregBoggle.js"> </script>
+	</body>
+</html>

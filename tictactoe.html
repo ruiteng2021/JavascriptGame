@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Greg's Gambits | Tic Tac Toe</title>
+<link href="css/greg.css" rel="stylesheet" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+	<div id="container">
+
+		<img src="asset/images/superhero.jpg" width="120" height="120" class="floatleft" />
+		<h1 id="logo"><em>Greg's Gambits </em></h1>
+		<p>&nbsp;</p>
+		<div id="nav">
+			<p><a href="index.html">Home</a>
+
+			<a href="play_games.html">Play a Game</a>
+			<a href="signin.html">Sign In</a>
+	
+		</div>
+		<div id="content">
+			<h2><br/> Tic Tac Toe</h2>
+			<form name = "tictactoe">
+				<h3 style="font-size:initial; padding: 0; border-bottom: none;">The game is for two players. One player is yellow(X), the other is orange(O).
+					The goal is to get three boxes in a row(across, down, or diagonally). When 
+					you enter your letter in to a box and click OK, the box willchange your color. 
+					The game ends either when one player wins or there is a tie.</h3>
+				
+				<table>
+					<tr>
+						<td class= "nobdr" ><input type = "text" id="ticTac11" size="3" value=""/>
+							<input type ="button" onclick ="tictac11('ticTac11')"
+							value = "ok" class="btn"> </button>&nbsp;&nbsp;&nbsp;</td>
+						<td class= "nobdr"><input type = "text" id="ticTac12" size="3" value=""/>
+							<input type ="button" onclick ="tictac12('ticTac12')"
+							value = "ok" class="btn"> </button>&nbsp;&nbsp;&nbsp;</td>
+						<td class= "nobdr"><input type = "text" id="ticTac13" size="3" value=""/>
+							<input type ="button" onclick ="tictac13('ticTac13')"
+							value = "ok" class="btn"> </button>&nbsp;&nbsp;&nbsp;</td>
+					</tr>
+
+					<tr>
+						<td class= "nobdr"><input type = "text" id="ticTac21" size="3" value=""/>
+							<input type ="button" onclick ="tictac21('ticTac21')" 
+							value = "ok" class="btn"></td>
+						<td class= "nobdr"><input type = "text" id="ticTac22" size="3" value=""/>
+							<input type ="button" onclick ="tictac22('ticTac22')"
+							value = "ok" class="btn"> </button></td>
+						<td class= "nobdr"><input type = "text" id="ticTac23" size="3" value=""/>
+							<input type ="button" onclick ="tictac23('ticTac23')"
+							value = "ok" class="btn"> </button></td>
+					</tr>
+
+					<tr>
+						<td class= "nobdr"><input type = "text" id="ticTac31" size="3" value=""/>
+							<input type ="button" onclick ="tictac31('ticTac31')"
+							value = "ok" class="btn"> </button></td>
+						<td class= "nobdr"><input type = "text" id="ticTac32" size="3" value=""/>
+							<input type ="button" onclick ="tictac32('ticTac32')"
+							value = "ok" class="btn"> </button></td>
+						<td class= "nobdr"><input type = "text" id="ticTac33" size="3" value=""/>
+							<input type ="button" onclick ="tictac33('ticTac33')"
+							value = "ok" class="btn"> </button></td>
+					</tr>
+				</table>
+				<br/><input type="reset" value="reset and play again!" onclick ="playAgain()"><br/>
+			</form>
+		</div>
+		<div id="footer">Copyright &copy; 2013 Greg's Gambits<br />
+			<a href="mailto:greg@gmail.com">greg@gmail.com</a></div>
+	</div>
+	<script src="scripts/site.js"> </script>
+
+</body>
+</html>
